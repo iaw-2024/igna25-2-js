@@ -4,13 +4,11 @@ const expressApp = require("../express/express.js" );
 
 app.use(expressApp);
 
-app.use(express.static('public'));
-/*
-app.get("/express", (req, res) => {
-    res.sendFile("./express/index.html", { root: '.' });
+app.get("/datos", (req, res) => {
+    res.sendFile("./public/dom/equipos.json", { root: '.' });
 });
-*/
-app.get("/datos", (req, res) => res.sendFile( __dirname + '/equipos.json'));
+
+app.use(express.static('public'));
 
 app.listen(3001, () => console.log("Server ready on port 3001."));
 

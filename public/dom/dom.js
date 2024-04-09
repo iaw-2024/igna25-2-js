@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('/datos') 
+    fetch('equipos.json') 
         .then(response => response.json())
         .then(equipos => {
             const tablaEquipos = document.querySelector('#equipos tbody');
