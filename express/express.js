@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const fs = require("fs");
+const path = require('path');
 
 
 const datos = [
@@ -32,7 +33,7 @@ function generarTabla(datos) {
 app.get("/express", (req, res) => {
     const tableHTML = generarTabla(datos);
     // Leer el archivo index.html y agregar la tabla
-    fs.readFile("./express/index.html", "utf8", (err, html) => {
+    fs.readFile(path.join(__dirname,'../express/index.html'), "utf8", (err, html) => {
         if (err) {
             console.error("Error al leer el archivo index.html:", err);
             res.status(500).send("Error interno del servidor");

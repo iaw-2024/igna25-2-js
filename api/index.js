@@ -1,11 +1,12 @@
 const express = require("express");
 const app = express();
 const expressApp = require("../express/express.js" );
+const path = require('path');
 
 app.use(expressApp);
 
 app.get("/datos", (req, res) => {
-    res.sendFile("./public/dom/equipos.json", { root: '.' });
+    res.sendFile(path.join(__dirname,'../public/dom/equipos.json'));
 });
 
 app.use(express.static('public'));
