@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/iaw-2024/igna25-2-js/issues"
   },
-  "homepage": "https://github.com/iaw-2024/igna25-2-js#readme"
+  "homepage": "https://github.com/iaw-2024/igna25-2-js#readme",
+  "devDependencies": {}
 }
