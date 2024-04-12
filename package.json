@@ -1,12 +1,12 @@
 {
-    "name": "server",
-    "version": "1.0.0",
-    "description": "",
-    "main": "api/index.js",
-    "scripts": {
-     "start": "node api/index.js"
-    },
-    "dependencies": {
-     "express": "^4.18.2"
-    }
-   }
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api/index.js",
+  "scripts": {
+   "start": "node api/index.js"
+  },
+  "dependencies": {
+   "express": "^4.19.2"
+  }
+ }
